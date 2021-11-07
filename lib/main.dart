@@ -1,5 +1,6 @@
 import 'package:finance_app_ui/pages/landing_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {
@@ -13,10 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(
       builder: (context, orientation, deviceType) {
-        return const MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Finance Application UI',
-          home: LandingPage(),
+        return ScreenUtilInit(
+          designSize: const Size(360, 690),
+          builder: () => const MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Finance Application UI',
+            home: LandingPage(),
+          ),
         );
       },
     );
