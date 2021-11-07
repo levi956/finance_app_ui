@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class LandingPage extends StatelessWidget {
                     height: MediaQuery.of(context).size.height * 0.50,
                     //padding: const EdgeInsets.only(top: 50),
                     width: MediaQuery.of(context).size.width * 0.50,
-                    color: Color.fromRGBO(33, 47, 60, 7),
+                    color: HexColor('#181D3B'),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -43,7 +44,7 @@ class LandingPage extends StatelessWidget {
                           child: Container(
                             width: MediaQuery.of(context).size.width * 0.50,
                             //height: MediaQuery.of(context).size.height * 0.50,
-                            color: Color.fromRGBO(23, 32, 42, 5),
+                            color: HexColor('#0E1326'),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
@@ -76,7 +77,7 @@ class LandingPage extends StatelessWidget {
                                   child: Text(
                                     "1.238,26 (8.2%)",
                                     style: TextStyle(
-                                        color: Colors.lightGreen[300],
+                                        color: HexColor('#E6F7A7'),
                                         fontSize: 23,
                                         fontFamily: 'SourceSansPro'),
                                   ),
@@ -198,9 +199,9 @@ class LandingPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
                             Padding(
-                              padding: EdgeInsets.only(right: 15, top: 30),
+                              padding: EdgeInsets.only(right: 20, top: 30),
                               child: SvgPicture.asset('images/bellRegular.svg',
-                                  height: 35, width: 35),
+                                  height: 25, width: 25),
                             ),
                             Padding(
                               padding: EdgeInsets.only(right: 15, top: 30),
@@ -226,14 +227,16 @@ class LandingPage extends StatelessWidget {
                               bottom: 15,
                             ),
                             width: MediaQuery.of(context).size.width * 0.50,
-                            color: Color.fromRGBO(255, 255, 0, 1),
+                            color: HexColor('#EFFD38'),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   'Overview',
                                   style: TextStyle(
-                                      color: Colors.black, fontSize: 19),
+                                      color: Colors.black,
+                                      fontSize: 19,
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(right: 15.0),

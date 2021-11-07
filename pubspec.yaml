@@ -29,6 +29,7 @@ environment:
 dependencies:
   flutter_svg: ^0.23.0+1
   flutter_screenutil: ^5.0.0+2
+  hexcolor: ^2.0.5
   sizer: ^2.0.15
   flutter:
     sdk: flutter
